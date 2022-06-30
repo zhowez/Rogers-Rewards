@@ -1,32 +1,20 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+The goal of this project was to make a rewards webapp for truck drivers. Drivers could make an account and apply to their driving company. They could then access the rewards catalog and see thier points history.Companies that wanted to particate with the program could accept/reject new drivers, manage their drivers, and edit the catalog to choose rewards they wanted to give. The only parameters for the project was that it needed to be a web app running on AWS. The group decided everything else
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Tech Stack
+## Front end
+- React.js 
+- Javascript
+- CSS
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Backend
+- Node.js
+- Express
+- MySQL
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
-
-# REST API
-Make requests to the REST API hosted at http://18.235.52.212 to access the AWS RDS instance A seed file, `dbseed.js`, ensures that necessary 
-RDS tables are always created upon starting the EC2 instance. `Node index.js` starts the s.erver to make available for client requests. The API
-is comprised of several Express.js routes that allow the client to create, read, update, and delete database entities.
-## Account
-## Application
-## Cart
-## DriverManagement
-## Points
-## Report
-## WishList
+## AWS
+- EC2 running NGINX, PM2 to manage daemon processes
+- MySQL RDS
+- VPC
+- Public subnet for EC2
+- Private subnet for RDS
